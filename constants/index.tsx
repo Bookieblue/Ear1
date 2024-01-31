@@ -1,0 +1,53 @@
+// NAVIGATION
+export const NAV_LINKS = [
+  {href: '#about', key: 'about', label: 'About ear1'},
+  {href: '#guide', key: 'how_it_works', label: 'How it works'},
+  {href: '#benefit', key: 'benefit', label: 'Benefit'}
+]
+
+// HOW IT WORKS SECTION
+export const WORKS = [
+  {
+    img: "./download-app.svg",
+    title : 'Install ear1 app',
+    description : 'Download ear1 app on Google Play for Andriod Users, and download ear1 app from Apple store.'
+  },
+  {
+    img: "./ask-for-invite.svg",
+    title : 'Ask for invite',
+    description : 'Ear1 is currently in closed bete, you will need an invite from someone who is already in the app or ask for invite publicly on Twitter.'
+  },
+  {
+    img: "./connect.svg",
+    title : 'Connect & Start chatting',
+    description : 'Pay your faviourite top person in your field a small fee to learn  from them and improve yourself and your business.'
+  }
+]
+ 
+// BENEFIT SECTION
+export const BENEFIT = [
+  {
+    img: "./people.svg",
+    title : 'Connect Influencers & audiences',
+    description : 'Ear1 provides better opportunity for you to connect with your favourite Influencers better and faster.'
+  },
+  {
+    img: "./chat.svg",
+    title : 'Improvement On Social DMs',
+    description : 'Ear1 provide a better DMs feature. as you only pay a small fee to DM top Influencers in your field for serious discussion.'
+  },
+  {
+    img: "./bulb.svg",
+    title : 'Gain Knowledge',
+    description : 'Ear1 is created with the purpose to help you connect to top person in your Industry to help fulfil your potential and be the change you want to see.'
+  },
+  {
+    img: "./partnership.svg",
+    title : 'Build Relationship',
+    description : 'Ear1 provide chances for top person in your field to know you, relate with you and to feel connected to you.'
+  }
+]
+
+
+
+  
