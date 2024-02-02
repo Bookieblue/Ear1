@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav
       className="flexBetween max-container
-   padding-container relative z-30 py-5 md:px-10"
+   padding-container bg-white w-full z-30 py-3 md:px-10 fixed shadow-sm"
     >
       <Link href="/">
         <Image src="/logo.svg" alt="logo" width={74} height={29} />
@@ -45,11 +45,11 @@ const Navbar = () => {
         onClick={showNav}
         className="inline-block cursor-pointer lg:hidden"
       ></Image>
-      <div className={menuOpen ? "fixed left-0 top-0 w-[65%]  h-screen bg-white border-2 p-5 ease-in duration-500"
+      <div className={menuOpen ? "fixed left-0 top-0 w-[65%] h-screen bg-white border-2 p-5 ease-in duration-500"
       : "fixed left-[-100%] top-0 p-10 ease-in duration-500"}>
         <div className="flex w-full justify-end items-center">
              <div onClick={showNav} className="cursor-pointer">
-                <p>X</p>
+                <h1 className="bold-32 mb-5">&times;</h1>
              </div>
         </div>
         <ul className="">

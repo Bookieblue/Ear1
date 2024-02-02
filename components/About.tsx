@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="max-container padding-container flex flex-col gap-20 pt-5 pb-20  md:gap-28 md:px-20 lg:pb-32 xl:flex-row">
       <div>
-      <div  data-aos="fade-up" className="flex flex-col flex-1 lg:flex-row">
+      <div className="flex flex-col gap-10 flex-1 lg:flex-row">
         <div className="lg:w-2/3">
           <h2 className="bold-24 text-green-50">About ear1</h2>
           <p className="medium-24 xl:medium-26 text-black">Think: LinkedIn + OnlyFans.</p>
@@ -23,16 +23,17 @@ const About = () => {
             to several and get a broader range of perspectives.
           </p>
         </div>
-        <div>
+        <div className="md:flexCenter">
             <Image 
             src='./phones.svg'
             alt='phones'
             width={493}
             height={568}
+            className="md:w-[60%] sm:w-[50%]  "
             />
         </div>
       </div>
-      <div data-aos="slide-right" className="flex flex-col leading-8 lg:flex-row">
+      <div className="flex flex-col leading-8 lg:flex-row">
         <div className="lg:w-1/2">
         <Image 
             src='./iphone11.svg'
@@ -45,7 +46,7 @@ const About = () => {
         <div className="lg:w-1/2 mt-5">
          <p className="medium-24 xl:medium-26 text-black">Talk To Your Favourite Influencer In Your Industry.</p>
          <p className="regular-16 pt-8">You can now DM and chat one influencer, or DM several others in your field to ask questions, 
-            discuss your progress, learn from their experience to improve yoursel for just kick on a new idea.
+            discuss your progress, learn from their experience to improve yourself for just kick on a new idea.
             Got an upcoming interview you need to nail? You only need to pay to DM and chat your Influencer for
             advise. </p>
         <p className="medium-24 xl:medium-26 text-black pt-10">Get Access To Unique Advice & Expert Guidance.</p>

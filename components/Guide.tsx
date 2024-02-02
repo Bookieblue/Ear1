@@ -22,9 +22,9 @@ const Guide = () => {
   return (
     <section
       id='guide'
-      className="max-container padding-container flex flex-col gap-20 pt-5 pb-20 lg:pb-32  md:px-20 md:gap-28 xl:flex-row"
+      className="max-container padding-container flex flex-col gap-20 pt-5 pb-20 lg:pb-20  md:px-20 md:gap-28 xl:flex-row"
     >
-      <div  data-aos="fade-up">
+      <div>
         <div className="text-center">
           <h2 className="bold-24 text-green-50">How It Works</h2>
           <p className="medium-24 xl:medium-26 text-black">
@@ -32,7 +32,7 @@ const Guide = () => {
           </p>
         </div>
         <div className="mt-20 text-center">
-          <div className="mt-10 flex flex-col flexCenter w-[100%] gap-10 lg:flex-row lg:mt-20 lg:gap-20">
+          <div className="mt-10 flex flex-col gap-10 lg:flex-row lg:mt-20 lg:gap-28">
             <div className="">
               <div className="flexCenter">
                 <Image
@@ -40,7 +40,7 @@ const Guide = () => {
                   alt="phone-human"
                   width={230}
                   height={100}
-                  className="w-[60%] md:w-[20%] lg:w-[83%] "
+                  className="w-[60%] sm:w-[20%]  md:w-[20%] lg:w-[83%] "
                 />
               </div>
               <GuideCard
@@ -55,7 +55,7 @@ const Guide = () => {
                   alt="phone-human"
                   width={140}
                   height={100}
-                  className="w-[40%] md:w-[15%] lg:w-[40%]"
+                  className="w-[40%] sm:w-[15%]  lg:ml-10 md:w-[15%] lg:w-[40%]"
                 />
               </div>
               <GuideCard
@@ -70,7 +70,7 @@ const Guide = () => {
                   alt="phone-human"
                   width={240}
                   height={100}
-                  className="w-[70%] md:w-[30%] lg:w-[70%]"
+                  className="w-[70%] sm:w-[30%] lg:ml-10 md:w-[30%] lg:w-[80%]"
                 />
               </div>
               <GuideCard

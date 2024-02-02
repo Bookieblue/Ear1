@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
       <div className="relative mt-40 h-[350px] object-fill bg-green-500 lg:bg-transparent">
         <div className="text-center medium-18 lg:medium-20 mx-7 pt-16">
-        <p>© 2021, ear1social</p>
+        <p>© 2023, ear1social</p>
         <p>Follow Us On Twitter</p>
         <p>Term & Conditions {''}{''}Privacy Policy</p>
         </div>
