@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section className="max-container gap-20 mt-10 lg:mt-32  md:gap-28 lg:py-0 lg:px-0 xl:flex-row">
+    <section className="gap-20 mt-10 lg:mt-32 md:gap-28 lg:py-0 lg:px-0 xl:flex-row">
       <div className="flexCenter max-container">
         <div data-aos='flip-left' className="w-[750px] h-fit lg:h-[428px] mx-7 bg-white border-t-2 border-green-50 shadow-md">
           <div className=" py-5 px-5 lg:py-10 lg:px-20">
@@ -37,6 +37,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="relative mt-40 h-[350px] object-fill bg-green-500 lg:bg-transparent">
+        <div className="max-container">
         <div className="text-center medium-18 lg:medium-20 mx-7 pt-16">
         <p>© 2023, ear1social</p>
         <p>Follow Us On Twitter</p>
@@ -47,9 +48,10 @@ const Footer = () => {
                 alt="people"
                 width={1500}
                 height={80} 
-        className="absolute bottom-0 -z-20 hidden lg:block"
+        className="absolute bottom-0 -z-20 hidden lg:block w-full max-container"
           />
-      <div className="absolute bg-gray-90 w-full bottom-0 ">
+        </div>
+      <div className="absolute bg-gray-90 w-full bottom-0 h-[100px] flexCenter ">
         <p className="text-white p-10 text-center">All Right Reserved</p>
       </div>
       </div>

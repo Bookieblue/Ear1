@@ -6,21 +6,21 @@ const About = () => {
     <section id="about" className="max-container padding-container flex flex-col gap-20 pt-5 pb-20  md:gap-28 md:px-20 lg:pb-32 xl:flex-row">
       <div>
       <div className="flex flex-col gap-10 flex-1 lg:flex-row">
-        <div className="lg:w-2/3">
+        <div className="lg:w-2/3 xl:w-[50%]">
           <h2 className="bold-24 text-green-50">About ear1</h2>
           <p className="medium-24 xl:medium-26 text-black">Think: LinkedIn + OnlyFans.</p>
           <p className="regular-16 text-black pt-8 leading-8">
             Connecting with Influencers to seek advise and guidance can be
             difficult as most Influencers DMs on Twitter, Instagram and LinkedIn
             get flooded with more messages than they can answer, and important
-            messages gets lost in thousands of unserious DMs, but ear1as make
+            messages gets lost in thousands of unserious DMs, but ear1 has make
             the process simple for you.{" "}
           </p>
 
           <p className="regular-16 text-black py-10 leading-8">
             With ear1, Influencers can now charge you small fee to make real
             connection and talk to them. You can talk to one influencer, or talk
-            to several and get a broader range of perspectives.
+            to several top persons and get a broader range of perspectives.
           </p>
         </div>
         <div className="md:flexCenter">

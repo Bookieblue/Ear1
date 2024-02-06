@@ -19,14 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
        <AOSInit />
-      <body>
+      <body className='pt-3'>
         <div className="max-container padding-container">
           <Image 
              src='./hero-bg.svg'
              alt='david'
              width={700}
              height={800}
-          className="absolute hidden lg:right-0 lg:top-0 lg:block w-[50%] 4xl:w-[30%] 4xl:mr-96 "
+          className="absolute hidden lg:right-0 lg:top-0 lg:block w-[50%] 2xl:w-[30%] 4xl:w-[20%] 4xl:mr-96 -z-20"
           />
         </div>
         <Navbar />
