@@ -12,25 +12,24 @@ const Navbar = () => {
          setMenuOpen(!menuOpen);
 
   }
-  const scrollHeader = () =>{
-    if (window.scrollY >= 20){
-      setHeader(true);
-    } else {
-      setHeader(false);
-    }
+//   const scrollHeader = () =>{
+//     if (window.scrollY >= 20 && window.innerWidth >= 768){
+//       setHeader(true);
+//     } else {
+//       setHeader(false);
+//     }
 
-}
+// }
 
-useEffect(()=>{
-   window.addEventListener('scroll', scrollHeader)
-   return () =>{
-    window.addEventListener('scroll', scrollHeader)
-   }
-},[])
+// useEffect(()=>{
+//    window.addEventListener('scroll', scrollHeader)
+//    return () =>{
+//     window.addEventListener('scroll', scrollHeader)
+//    }
+// },[])
   return (
-    <nav
-      className={header ? "flexBetween bg-white w-full z-30 py-3 fixed shadow-sm top-0" : "bg-transparent"}
-    >
+    <nav className="flexBetween bg-white w-full z-30 py-3 fixed shadow-sm top-0">
+
     <div className="max-container padding-container flexBetween w-full">
     <Link href="/">
         <Image src="/logo.svg" alt="logo" width={74} height={29} />

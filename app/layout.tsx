@@ -26,7 +26,7 @@ export default function RootLayout({
              alt='david'
              width={700}
              height={800}
-          className="absolute hidden lg:right-0 lg:top-0 lg:block w-[50%] 2xl:w-[30%] 4xl:w-[20%] 4xl:mr-96 -z-20"
+          className="absolute hidden lg:right-0 lg:top-0 lg:block w-[50%] 2xl:w-[30%] 4xl:w-[20%] 4xl:right-80 3xl:mr-40 4xl:mr-48 -z-20"
           />
         </div>
         <Navbar />
