@@ -3,34 +3,19 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [header, setHeader] = useState(false);
   const showNav = () =>{
          setMenuOpen(!menuOpen);
 
   }
-//   const scrollHeader = () =>{
-//     if (window.scrollY >= 20 && window.innerWidth >= 768){
-//       setHeader(true);
-//     } else {
-//       setHeader(false);
-//     }
 
-// }
-
-// useEffect(()=>{
-//    window.addEventListener('scroll', scrollHeader)
-//    return () =>{
-//     window.addEventListener('scroll', scrollHeader)
-//    }
-// },[])
   return (
-    <nav className="flexBetween bg-white w-full z-30 py-3 fixed shadow-sm top-0">
+    <nav className="flexBetween bg-white w-full z-30 py-3 fixed  top-0">
 
-    <div className="max-container padding-container flexBetween w-full">
+    <div className="max-container padding-container flexBetween w-full 4xl:px-0">
     <Link href="/">
         <Image src="/logo.svg" alt="logo" width={74} height={29} />
       </Link>

@@ -2,8 +2,7 @@ import { AOSInit } from './aos'
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Image from "next/image";
+import Footer from '@/components/Footer';
 
 
 export const metadata: Metadata = {
@@ -19,16 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
        <AOSInit />
-      <body className='pt-3'>
-        <div className="max-container padding-container">
-          <Image 
-             src='./hero-bg.svg'
-             alt='david'
-             width={700}
-             height={800}
-          className="absolute hidden lg:right-0 lg:top-0 lg:block w-[50%] 2xl:w-[30%] 4xl:w-[20%] 4xl:right-80 3xl:mr-40 4xl:mr-48 -z-20"
-          />
-        </div>
+      <body>
         <Navbar />
         <main className="relative 
         overflow-hidden">

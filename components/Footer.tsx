@@ -1,62 +1,76 @@
+import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
-    <section className="gap-20 mt-10 lg:mt-32 md:gap-28 lg:py-0 lg:px-0 xl:flex-row">
-      <div className="flexCenter max-container">
-        <div data-aos='flip-left' className="w-[750px] h-fit lg:h-[428px] mx-7 bg-white border-t-2 border-green-50 shadow-md">
-          <div className=" py-5 px-5 lg:py-10 lg:px-20">
-            <p className="bold-36 text-black  text-center">
-              Download App, It’s Free
-            </p>
-            <p className="regular-16 mt-10">
-              Accessing a top person in industries have never been simpler. But
-              imagine having a platform to connect you to that top person in
-              your field to offer advice and expert guidance.{" "}
-            </p>
-            <p className="regular-16 mt-10">
-              With ear1, you can now directly DM and chat with top person in
-              your field without your messages geting lost in unserious DMs.
-            </p>
-            <div className="flex flex-col md:flex-row md:flexCenter gap-4 pt-8 pb-10 lg:pb-24">
-              <Image
-                src="./play-store.svg"
-                alt="playstore"
-                width={171}
-                height={52}
-              />
-              <Image
-                src="./apple-store.svg"
-                alt="playstore"
-                width={171}
-                height={52}
-              />
+    <footer className="flexCenter mt-20 py-20 bg-green-600">
+      <div className="padding-container max-container flex w-full flex-col gap-14">
+        <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
+          <Link href="/" className="mb-10">
+            <Image src="/logo2.svg" alt="logo" width={74} height={29} />
+          </Link>
+
+          <div className="flex flex-wrap gap-10 text-white sm:justify-between md:flex-1">
+            {FOOTER_LINKS.map((columns) => (
+              <FooterColumn title={columns.title}>
+                <ul className="regular-14 flex flex-col gap-4 text-white">
+                  {columns.links.map((link) => (
+                    <Link href="/" key={link}>
+                      {link}
+                    </Link>
+                  ))}
+                </ul>
+              </FooterColumn>
+            ))}
+            <div className="flex gap-5 flex-col">
+              <FooterColumn title={FOOTER_CONTACT_INFO.title}>
+                {FOOTER_CONTACT_INFO.links.map((link) => (
+                  <Link
+                    href="/"
+                    key={link.label}
+                    className="flex gap-4 md:flex-col text-white lg:flex-row"
+                  >
+                    <p className="whitespace-nowrap">{link.label} :</p>
+                    <p className="medium-14 whitespace-nowrap text-white">
+                      {link.value}
+                    </p>
+                  </Link>
+                ))}
+              </FooterColumn>
+            </div>
+            <div className="flex flew-col gap-5 ">
+              <FooterColumn title={SOCIALS.title}>
+                <ul className="regular-14 flex gap-4 text-white">
+                  {SOCIALS.links.map((link) => (
+                    <Link href="/" key={link}>
+                      <Image src={link} alt="logo" width={24} height={24} />
+                    </Link>
+                  ))}
+                </ul>
+              </FooterColumn>
             </div>
           </div>
         </div>
+        <div className="border bg-gray-20"/>
+        <p className="regular-14 w-full text-center text-white">2024 ear1 | All rights reserved</p>
       </div>
-      <div className="relative mt-40 h-[350px] object-fill bg-green-500 lg:bg-transparent">
-        <div className="max-container">
-        <div className="text-center medium-18 lg:medium-20 mx-7 pt-16">
-        <p>© 2023, ear1social</p>
-        <p>Follow Us On Twitter</p>
-        <p>Term & Conditions {''}{''}Privacy Policy</p>
-        </div>
-        <Image
-                src="./footer-bg.svg"
-                alt="people"
-                width={1500}
-                height={80} 
-        className="absolute bottom-0 -z-20 hidden lg:block w-full max-container"
-          />
-        </div>
-      <div className="absolute bg-gray-90 w-full bottom-0 h-[100px] flexCenter ">
-        <p className="text-white p-10 text-center">All Right Reserved</p>
-      </div>
-      </div>
-      
-    </section>
+    </footer>
+  );
+};
+
+type FooterColumnProps = {
+  title: string;
+  children: React.ReactNode;
+};
+
+const FooterColumn = ({ title, children }: FooterColumnProps) => {
+  return (
+    <div className="flex flex-col gap-5">
+      <h4 className="bold-18 whitespace-nowrap">{title}</h4>
+      {children}
+    </div>
   );
 };
 

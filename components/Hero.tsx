@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col mt-20 gap-20 py-5 pb-16 lg:pb-28 md:gap-28 md:px-20 lg:py-20 xl:flex-row">
+    <section className="max-container padding-container flex flex-col mt-20 lg:mt-0 flexBetween py-5 pb-16 lg:pb-28 md:gap-28 md:px-20 lg:py-20 lg:flex-row">
       <div className="flex flex-col lg:w-[50%] lg:py-5  ">
         <h1 className="bold-40 lg:bold-52 ">
             DM & Chat with <span className="text-green-50">Influencers</span> Better
@@ -27,6 +27,15 @@ const Hero = () => {
             height={52}
             />
       </div>
+        </div>
+        <div className="rounded-full">
+          <Image 
+             src='./hero-bg.svg'
+             alt='david'
+             width={550}
+             height={800}
+          className=" hidden lg:block"
+          />
         </div>
     </section>
   );
