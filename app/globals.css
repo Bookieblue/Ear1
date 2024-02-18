@@ -17,7 +17,7 @@ body {
 @layer utilities {
   
   .btn_black{
-    @apply border-black bg-green-50 px-8 py-3 text-black
+    @apply border-green-50 bg-green-50 px-8 py-3 text-black
   }
 
   .btn_green_text {

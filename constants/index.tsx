@@ -63,7 +63,7 @@ export const BENEFIT = [
     },
     {
       title: 'Our Community',
-      links: ['Celebrity Hangout', 'Ear1 Conknet', 'Ear1 Influencers'],
+      links: ['Celebrity Hangout', 'Ear1 Connect', 'Ear1 Influencers'],
     },
   ];
   

@@ -75,7 +75,7 @@ const Guide = () => {
               </div>
               <GuideCard
                 title="Connect & Start chatting"
-                description="Pay your faviourite top person in your field a small fee to learn  from them and improve yourself and your business."
+                description="Pay your favourite top person in your field a small fee to learn  from them and improve yourself and your business."
               />
             </div>
           </div>
