@@ -4,7 +4,7 @@ export const NAV_LINKS = [
   {href: '#guide', key: 'how_it_works', label: 'How it works'},
   {href: '#benefit', key: 'benefit', label: 'Benefit'},
   {href: '#testimonials', key: 'testimonials', label: 'testimonials'},
-  {href: '#FAQ', key: 'FAQ', label: 'FAQ'},
+  {href: '#faq', key: 'FAQ', label: 'FAQ'},
 ]
 
 // HOW IT WORKS SECTION
