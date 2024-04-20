@@ -3,12 +3,12 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="max-container padding-container flex flex-col gap-20 pt-5 pb-20  md:gap-28 md:px-20 lg:pb-32 xl:flex-row">
+    <section id="about" className="max-container padding-container flex flex-col gap-20 pt-5 pb-20  md:gap-28 md:px-20 xl:flex-row">
       <div>
       <div className="flex flex-col gap-10 flex-1 lg:flex-row">
         <div className="lg:w-2/3 xl:w-[50%]">
           <h2 className="bold-24 text-green-50">About ear1</h2>
-          <p className="medium-24 xl:medium-26 text-black">Think: LinkedIn + OnlyFans.</p>
+          <p className="medium-20 xl:medium-26 text-black">Think: LinkedIn + OnlyFans.</p>
           <p className="regular-16 text-black pt-8 leading-8">
             Connecting with Influencers to seek advise and guidance can be
             difficult as most Influencers DMs on Twitter, Instagram and LinkedIn

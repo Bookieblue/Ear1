@@ -27,11 +27,11 @@ const Guide = () => {
       <div>
         <div className="text-center">
           <h2 className="bold-24 text-green-50">How It Works</h2>
-          <p className="medium-24 xl:medium-26 text-black">
+          <p className="medium-20 xl:medium-26 text-black">
             Instant Chat With Your Favourite Influencers{" "}
           </p>
         </div>
-        <div className="mt-20 text-center">
+        <div className="lg:mt-20 text-center">
           <div className="mt-10 flex flex-col gap-10 lg:flex-row lg:mt-20 lg:gap-28">
             <div className="">
               <div className="flexCenter">
@@ -40,7 +40,7 @@ const Guide = () => {
                   alt="phone-human"
                   width={230}
                   height={100}
-                  className="w-[60%] sm:w-[20%]  md:w-[20%] lg:w-[83%] "
+                  className="w-[30%] lg:w-[40%] sm:min-w-[20%]"
                 />
               </div>
               <GuideCard
@@ -55,7 +55,7 @@ const Guide = () => {
                   alt="phone-human"
                   width={140}
                   height={100}
-                  className="w-[40%] sm:w-[15%]  lg:ml-10 md:w-[15%] lg:w-[40%]"
+                  className="lg:ml-10 w-[20%] sm:min-w-[10%]"
                 />
               </div>
               <GuideCard
@@ -70,7 +70,7 @@ const Guide = () => {
                   alt="phone-human"
                   width={240}
                   height={100}
-                  className="w-[70%] sm:w-[30%] lg:ml-10 md:w-[30%] lg:w-[80%]"
+                  className="lg:ml-10 w-[40%] sm:min-w-[20%]"
                 />
               </div>
               <GuideCard

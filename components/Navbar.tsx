@@ -15,11 +15,11 @@ const Navbar = () => {
   return (
     <nav className="flexBetween bg-white w-full z-30 py-3 fixed  top-0">
 
-    <div className="max-container padding-container flexBetween w-full 4xl:px-0">
+    <div className="max-container padding-container flexBetween  w-full 4xl:px-0">
     <Link href="/">
         <Image src="/logo.svg" alt="logo" width={74} height={29} />
       </Link>
-      <ul className="hidden h-full gap-12 lg:flex">
+      <ul className="hidden h-full gap-12 lg:flexCenter">
         {NAV_LINKS.map((link) => (
           <Link
             href={link.href}

@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-       <AOSInit />
+      <head><link rel="icon" href="/favicon.ico" />
+      </head>
+      <AOSInit />
       <body>
         <Navbar />
         <main className="relative 

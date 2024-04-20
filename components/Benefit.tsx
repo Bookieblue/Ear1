@@ -33,12 +33,12 @@ const Benefit = () => {
     <section
       id="benefit"
       data-aos="fade-up"
-      className="max-container padding-container pt-5 md:px-20 pb-20 lg:pb-32  md:gap-28 lg:py-20 relative"
+      className="max-container padding-container pt-5 md:px-20 pb-20 lg:pb-32  md:gap-28 lg:py-10 relative"
     >
       <div className="relative">
         <div className="text-center">
           <h2 className="bold-24 text-green-50">Benefit Of Ear1 Platform</h2>
-          <p className="medium-24 xl:medium-26 text-black mb-10">
+          <p className="medium-20 xl:medium-26 text-black mb-10">
             A Better Way To Grow Each Other
           </p>
         </div>
@@ -48,10 +48,10 @@ const Benefit = () => {
             alt="circle"
             width={300}
             height={700}
-            className=" ml-10 top-5 hidden absolute lg:block"
+            className=" ml-10 top-5 hidden absolute "
           />
         </div>
-        <div className="grid grid-cols-1 top-56 gap-10 md:grid-cols-2 lg:gap-x-96 lg:gap-y-16 ">
+        <div className="grid grid-cols-1 top-56 gap-10 md:grid-cols-2 ">
           {BENEFIT.map((benefit) => (
             <BenefitCard
               key={benefit.title}

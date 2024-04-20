@@ -2,7 +2,9 @@
 export const NAV_LINKS = [
   {href: '#about', key: 'about', label: 'About ear1'},
   {href: '#guide', key: 'how_it_works', label: 'How it works'},
-  {href: '#benefit', key: 'benefit', label: 'Benefit'}
+  {href: '#benefit', key: 'benefit', label: 'Benefit'},
+  {href: '#testimonials', key: 'testimonials', label: 'testimonials'},
+  {href: '#FAQ', key: 'FAQ', label: 'FAQ'},
 ]
 
 // HOW IT WORKS SECTION
@@ -47,6 +49,25 @@ export const BENEFIT = [
     description : 'Ear1 provide chances for top person in your field to know you, relate with you and to feel connected to you.'
   }
 ]
+
+//FAQ SECTION
+export const FAQ_DATA = [
+  {
+    question: "How do I get started?",
+    answer:
+      "To get started, download the app and sign up to the platform. This will allow you to connect with influencers.",
+  },
+  {
+    question: "Can I cancel my subscription anytime?",
+    answer:
+      "Yes, you can cancel your subscription at any time.",
+  },
+  {
+    question: "Is there a free trial available?",
+    answer:
+      "We offer a 7-day free trial for all new users. Download the Mobile App on Google Playstore and App Store.",
+  },
+];
 
 
   // FOOTER SECTION
