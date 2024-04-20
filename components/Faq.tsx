@@ -21,7 +21,7 @@ const FAQ = () => {
         Frequently Asked Questions (FAQs)
         </h2>
         <p className="medium-20 xl:medium-26 text-black mb-10">
-        We've provided answers to several commonly asked questions. 
+        We&apos;ve provided answers to several commonly asked questions. 
         </p>
       </div>
       <div className="space-y-4">
